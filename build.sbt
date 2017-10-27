@@ -14,9 +14,15 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-http-xml"        % akkaHttpVersion,
       "com.typesafe.akka" %% "akka-stream"          % akkaVersion,
 
+      "org.apache.hadoop" % "hadoop-client" % "1.2.1",
+      "org.apache.hbase" % "hbase" % "1.2.0",
+      "org.apache.hbase" % "hbase-client" % "1.2.0",
+      "org.apache.hbase" % "hbase-common" % "1.2.0",
+
       "com.typesafe.akka" %% "akka-http-testkit"    % akkaHttpVersion % Test,
       "com.typesafe.akka" %% "akka-testkit"         % akkaVersion     % Test,
       "com.typesafe.akka" %% "akka-stream-testkit"  % akkaVersion     % Test,
       "org.scalatest"     %% "scalatest"            % "3.0.1"         % Test
     )
+
   )
